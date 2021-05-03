@@ -2,14 +2,57 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Tika Taka Toe</title>
+        <title>Tic Tac Toe</title>
         <link rel="stylesheet" href="style/style.css">
+        <script src="js/script.js" defer></script>
     </head>
-
     <body>
+        <header class="main">
+            <h1>Tic Tac Toe</h1>
+            <h2>The only winning move is...</h2>
+        </header>
 
-        <script src="js/main.js"></script>
+        <div class="scoreboardHead">
+            <div class="leftscoreboard">Player X</div>
+            <div class="rightscoreboard">Player O</div>
+        </div>
+
+        <div class="scoreboardScore">
+            <div id="playerXScore">0</div>
+
+            <div class="playmode">
+                <select id="playmode" width="220px">
+                    <option class="playmode-dropdown" value="2P">2P</option>
+                    <option class="playmode-dropdown" value="CPU">CPU</option>
+                </select>
+            </div>
+
+            <div id="playerOScore">0</div>
+        </div>
+
+        <main class="main">
+            <div class="message" id="message">Player X's turn</div> 
+
+            <div class="gameboard">
+                <div class="field" data-index="0"></div>
+                <div class="field" data-index="1"></div>
+                <div class="field" data-index="2"></div>
+                <div class="field" data-index="3"></div>
+                <div class="field" data-index="4"></div>
+                <div class="field" data-index="5"></div>
+                <div class="field" data-index="6"></div>
+                <div class="field" data-index="7"></div>
+                <div class="field" data-index="8"></div>
+            </div>
+
+            
+            
+            <button class="restart-button" id="restart-button">Play Again?</button>
+
+            
+
+            <p id="credits">By Cameron Finnie 2021</p>
+            
+        </main>
     </body>
-
-
 </html>
